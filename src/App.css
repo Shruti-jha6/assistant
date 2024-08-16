@@ -1,44 +1,61 @@
-.App {
+/* General styling for the body */
+body {
+  margin: 5rem;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #033133;
+}
+.main {
   text-align: center;
+  padding: 5rem; 
+  background-color: #D6EFD8;
+  border-radius: 2rem;
+  box-shadow: 5px 12px 45px rgb(106, 208, 221);
+}
+.heading {
+  font-size: 3.2rem;
+  margin-bottom: 20px;
+  color: #033133;
+}
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #FFF5E1;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  resize: none;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-.main{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Style for the button */
+button {
+  margin: 2%;
+  background-color: darkcyan;
+    border: none;
+    padding: 2rem;
+    font-size: 1.5rem;
+    border-left: 7px solid cyan;
+    border-right: 7px solid cyan;
+    color: cyan;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button:hover {
+  font-size: 1.6rem;
+  background-color: darkcyan;
+    
+    box-shadow: 1px 2px 20px cyan;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style for the answer section */
+.answer {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+  word-wrap: break-word;
 }

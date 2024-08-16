@@ -26,10 +26,14 @@ function App() {
 
   return (
     <div className="main">
-      <h1>Kya hukum mere aaka!</h1>
-      <textarea value={ques} onChange={(e) => setQues(e.target.value)} cols="40" rows="15"></textarea>
-      <button onClick={generateans}>Generate</button>
+      <h1 className='heading'>Kya hukum mere aaka!</h1>
+      <textarea value={ques} onChange={(e) => setQues(e.target.value)} cols="50" rows="5"></textarea>
+      <div className="but"><button onClick={generateans}>Generate</button></div>
+      <div className="answer">
       <p>{ans}</p>
+
+      </div>
+      
     </div>
   );
 }
